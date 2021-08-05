@@ -1,0 +1,26 @@
+body{
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body::before{
+    content: "";
+    background-image: url(https://media.istockphoto.com/photos/client-consulting-with-a-agent-picture-id1218601531?b=1&k=6&m=1218601531&s=170667a&w=0&h=W9XC1gs_01vkQD22liZJMIL3O3ngymqopFQLt6M6DUg=);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+.mycontainer{
+    width: 50%;
+}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container mycontainer mt-3 " style="background-color: black;color: white;">
+  <h1 class="text-center mt-3">Customer Churn Predictor</h1>
+  <form action="/" method="POST">
+    <div class="mb-3">
+      <label for="creditscore" class="form-label">CreditScore</label>
+      <input type="text" class="form-control" id="creditscore" name="creditscore" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input type="text" class="form-control" id="age" name="age">
+    </div>
+    <div class="mb-3">
+      <label for="tenure" class="form-label">Tenure</label>
+      <input type="text" class="form-control" id="tenure" name="tenure" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="balance" class="form-label">Balance</label>
+      <input type="text" class="form-control" id="balance" name="balance" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="estimatedsalary" class="form-label">EstimatedSalary</label>
+      <input type="text" class="form-control" id="estimatedsalary" name="estimatedsalary" aria-describedby="emailHelp">
+    </div>
+
+    <div class="col-md-4">
+      <label for="numofproducts" class="form-label">NumOfProducts</label>
+      <select id="numofproducts" name="numofproducts" class="form-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="hascrcard class="form-label">HasCrCard
+      </label>
+      <select id="hascrcard" name="hascrcard" class="form-select">
+        <option value="1">YES</option>
+        <option value="0">NO</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="isactivemember" class="form-label">IsActiveMember
+      </label>
+      <select id="isactivemember" name="isactivemember" class="form-select">
+        <option value="1">YES</option>
+        <option value="0">NO</option>
+      </select>
+    </div> 
+    <button type="submit" style="" class="btn btn-primary mb-3 mt-3">Predict</button>
+  </form>
+</div>
+{% endblock %}

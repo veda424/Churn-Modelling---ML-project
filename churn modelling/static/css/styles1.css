@@ -1,0 +1,6 @@
+body{
+    background-image: src = "{{url_for('static',filename='img/show.jpg')}}";
+}
+.bg-img{
+    opacity: 0.4;
+}
